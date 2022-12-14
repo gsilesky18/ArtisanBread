@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Bread" representedClassName="Bread" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scale" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="recipe" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recipe" inverseName="whichBread" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES">
+        <attribute name="grams" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ingredient" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="whichBread" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bread" inverseName="recipe" inverseEntity="Bread" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bread" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Recipe" positionX="171" positionY="-18" width="128" height="88"/>
+    </elements>
+</model>

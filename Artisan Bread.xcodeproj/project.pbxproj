@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		170B772D1AF3EFC500D62309 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 170B772C1AF3EFC500D62309 /* Settings.bundle */; };
+		173051771ACB77740080A388 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173051761ACB77740080A388 /* CoreDataStack.swift */; };
+		17502EFC1AE2FF4900AC3778 /* NewIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17502EFB1AE2FF4900AC3778 /* NewIngredientViewController.swift */; };
+		17639A511E983B9B003B2CC9 /* Instructions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17639A501E983B9B003B2CC9 /* Instructions.pdf */; };
+		177D69041AEEF561005686AB /* InstructionsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D69031AEEF561005686AB /* InstructionsDetailViewController.swift */; };
+		1783EE6F20CCD8EB009D8997 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1783EE6E20CCD8EB009D8997 /* CloudKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		178576E71AC77C0D0073E432 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178576E61AC77C0D0073E432 /* DetailViewController.swift */; };
+		17862DCE1B795EA500BF5C52 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17862DCD1B795EA500BF5C52 /* CloudKitHelper.swift */; };
+		17862DD01B795F2600BF5C52 /* BreadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17862DCF1B795F2600BF5C52 /* BreadData.swift */; };
+		17862DD21B795F6600BF5C52 /* ImportExportExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17862DD11B795F6600BF5C52 /* ImportExportExt.swift */; };
+		17862DD71B79670500BF5C52 /* NetworkAvailabiity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17862DD61B79670500BF5C52 /* NetworkAvailabiity.swift */; };
+		17862DDB1B796C8D00BF5C52 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17862DDA1B796C8D00BF5C52 /* ReviewViewController.swift */; };
+		179196D81A6B45F800F26E1B /* Breadext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179196D71A6B45F800F26E1B /* Breadext.swift */; };
+		17D2E9481AD04D290014DBAF /* Recipeext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D2E9471AD04D290014DBAF /* Recipeext.swift */; };
+		17E9E3BC1A66E5760017CE8F /* NewBreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9E3BB1A66E5760017CE8F /* NewBreadViewController.swift */; };
+		17E9E3BE1A66E64B0017CE8F /* Artisan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17E9E3BD1A66E64B0017CE8F /* Artisan.plist */; };
+		17F1BBAF1AF66FCE007533FE /* Artisan_Bread.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BBAD1AF66FCE007533FE /* Artisan_Bread.xcdatamodeld */; };
+		17F1BBB51AF673B1007533FE /* Bread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BBB41AF673B1007533FE /* Bread.swift */; };
+		17F1BBB71AF673B2007533FE /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BBB61AF673B2007533FE /* Recipe.swift */; };
+		17FFD6B21A65BA6A004E0C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FFD6B11A65BA6A004E0C07 /* AppDelegate.swift */; };
+		17FFD6BA1A65BA6A004E0C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17FFD6B81A65BA6A004E0C07 /* Main.storyboard */; };
+		17FFD6BC1A65BA6A004E0C07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17FFD6BB1A65BA6A004E0C07 /* Images.xcassets */; };
+		17FFD6BF1A65BA6A004E0C07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17FFD6BD1A65BA6A004E0C07 /* LaunchScreen.xib */; };
+		17FFD6CB1A65BA6A004E0C07 /* Artisan_BreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FFD6CA1A65BA6A004E0C07 /* Artisan_BreadTests.swift */; };
+		17FFD6D51A65BB02004E0C07 /* BreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FFD6D41A65BB02004E0C07 /* BreadViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17FFD6C51A65BA6A004E0C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17FFD6A41A65BA6A004E0C07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17FFD6AB1A65BA6A004E0C07;
+			remoteInfo = "Artisan Bread";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		170B772C1AF3EFC500D62309 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		173051761ACB77740080A388 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		17502EFB1AE2FF4900AC3778 /* NewIngredientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewIngredientViewController.swift; sourceTree = "<group>"; };
+		17639A501E983B9B003B2CC9 /* Instructions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Instructions.pdf; sourceTree = "<group>"; };
+		177D69031AEEF561005686AB /* InstructionsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsDetailViewController.swift; sourceTree = "<group>"; };
+		1783EE6E20CCD8EB009D8997 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		178576E61AC77C0D0073E432 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		17862DCD1B795EA500BF5C52 /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
+		17862DCF1B795F2600BF5C52 /* BreadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreadData.swift; sourceTree = "<group>"; };
+		17862DD11B795F6600BF5C52 /* ImportExportExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportExportExt.swift; sourceTree = "<group>"; };
+		17862DD61B79670500BF5C52 /* NetworkAvailabiity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAvailabiity.swift; sourceTree = "<group>"; };
+		17862DDA1B796C8D00BF5C52 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		179196D71A6B45F800F26E1B /* Breadext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Breadext.swift; sourceTree = "<group>"; };
+		17D2E9471AD04D290014DBAF /* Recipeext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipeext.swift; sourceTree = "<group>"; };
+		17E9E3BB1A66E5760017CE8F /* NewBreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBreadViewController.swift; sourceTree = "<group>"; };
+		17E9E3BD1A66E64B0017CE8F /* Artisan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Artisan.plist; sourceTree = "<group>"; };
+		17E9E3BF1A66ED890017CE8F /* Artisan Bread-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Artisan Bread-Bridging-Header.h"; sourceTree = "<group>"; };
+		17F1BBAE1AF66FCE007533FE /* Artisan_Bread.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Artisan_Bread.xcdatamodel; sourceTree = "<group>"; };
+		17F1BBB41AF673B1007533FE /* Bread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bread.swift; sourceTree = "<group>"; };
+		17F1BBB61AF673B2007533FE /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		17FFD6AC1A65BA6A004E0C07 /* Artisan Bread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Artisan Bread.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17FFD6B01A65BA6A004E0C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17FFD6B11A65BA6A004E0C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17FFD6B91A65BA6A004E0C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17FFD6BB1A65BA6A004E0C07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		17FFD6BE1A65BA6A004E0C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		17FFD6C41A65BA6A004E0C07 /* Artisan BreadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Artisan BreadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17FFD6C91A65BA6A004E0C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17FFD6CA1A65BA6A004E0C07 /* Artisan_BreadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artisan_BreadTests.swift; sourceTree = "<group>"; };
+		17FFD6D41A65BB02004E0C07 /* BreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreadViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17FFD6A91A65BA6A004E0C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1783EE6F20CCD8EB009D8997 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17FFD6C11A65BA6A004E0C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1783EE6520CCD4F0009D8997 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1783EE6E20CCD8EB009D8997 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17E9E3CC1A66EE4C0017CE8F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				179196D71A6B45F800F26E1B /* Breadext.swift */,
+				17D2E9471AD04D290014DBAF /* Recipeext.swift */,
+				17862DD11B795F6600BF5C52 /* ImportExportExt.swift */,
+				173051761ACB77740080A388 /* CoreDataStack.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		17FFD6A31A65BA6A004E0C07 = {
+			isa = PBXGroup;
+			children = (
+				17F1BBB61AF673B2007533FE /* Recipe.swift */,
+				17F1BBB41AF673B1007533FE /* Bread.swift */,
+				17E9E3CC1A66EE4C0017CE8F /* CoreData */,
+				17FFD6AE1A65BA6A004E0C07 /* Artisan Bread */,
+				17FFD6C71A65BA6A004E0C07 /* Artisan BreadTests */,
+				17FFD6AD1A65BA6A004E0C07 /* Products */,
+				1783EE6520CCD4F0009D8997 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		17FFD6AD1A65BA6A004E0C07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17FFD6AC1A65BA6A004E0C07 /* Artisan Bread.app */,
+				17FFD6C41A65BA6A004E0C07 /* Artisan BreadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17FFD6AE1A65BA6A004E0C07 /* Artisan Bread */ = {
+			isa = PBXGroup;
+			children = (
+				17FFD6B81A65BA6A004E0C07 /* Main.storyboard */,
+				17F1BBAD1AF66FCE007533FE /* Artisan_Bread.xcdatamodeld */,
+				17FFD6D41A65BB02004E0C07 /* BreadViewController.swift */,
+				177D69031AEEF561005686AB /* InstructionsDetailViewController.swift */,
+				17E9E3BB1A66E5760017CE8F /* NewBreadViewController.swift */,
+				17502EFB1AE2FF4900AC3778 /* NewIngredientViewController.swift */,
+				178576E61AC77C0D0073E432 /* DetailViewController.swift */,
+				17862DDA1B796C8D00BF5C52 /* ReviewViewController.swift */,
+				17862DCD1B795EA500BF5C52 /* CloudKitHelper.swift */,
+				17862DCF1B795F2600BF5C52 /* BreadData.swift */,
+				17862DD61B79670500BF5C52 /* NetworkAvailabiity.swift */,
+				17FFD6AF1A65BA6A004E0C07 /* Supporting Files */,
+				17E9E3BF1A66ED890017CE8F /* Artisan Bread-Bridging-Header.h */,
+			);
+			path = "Artisan Bread";
+			sourceTree = "<group>";
+		};
+		17FFD6AF1A65BA6A004E0C07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17FFD6BD1A65BA6A004E0C07 /* LaunchScreen.xib */,
+				170B772C1AF3EFC500D62309 /* Settings.bundle */,
+				17FFD6BB1A65BA6A004E0C07 /* Images.xcassets */,
+				17FFD6B11A65BA6A004E0C07 /* AppDelegate.swift */,
+				17639A501E983B9B003B2CC9 /* Instructions.pdf */,
+				17E9E3BD1A66E64B0017CE8F /* Artisan.plist */,
+				17FFD6B01A65BA6A004E0C07 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17FFD6C71A65BA6A004E0C07 /* Artisan BreadTests */ = {
+			isa = PBXGroup;
+			children = (
+				17FFD6CA1A65BA6A004E0C07 /* Artisan_BreadTests.swift */,
+				17FFD6C81A65BA6A004E0C07 /* Supporting Files */,
+			);
+			path = "Artisan BreadTests";
+			sourceTree = "<group>";
+		};
+		17FFD6C81A65BA6A004E0C07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17FFD6C91A65BA6A004E0C07 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17FFD6AB1A65BA6A004E0C07 /* Artisan Bread */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17FFD6CE1A65BA6A004E0C07 /* Build configuration list for PBXNativeTarget "Artisan Bread" */;
+			buildPhases = (
+				17FFD6A81A65BA6A004E0C07 /* Sources */,
+				17FFD6A91A65BA6A004E0C07 /* Frameworks */,
+				17FFD6AA1A65BA6A004E0C07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Artisan Bread";
+			productName = "Artisan Bread";
+			productReference = 17FFD6AC1A65BA6A004E0C07 /* Artisan Bread.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17FFD6C31A65BA6A004E0C07 /* Artisan BreadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17FFD6D11A65BA6A004E0C07 /* Build configuration list for PBXNativeTarget "Artisan BreadTests" */;
+			buildPhases = (
+				17FFD6C01A65BA6A004E0C07 /* Sources */,
+				17FFD6C11A65BA6A004E0C07 /* Frameworks */,
+				17FFD6C21A65BA6A004E0C07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17FFD6C61A65BA6A004E0C07 /* PBXTargetDependency */,
+			);
+			name = "Artisan BreadTests";
+			productName = "Artisan BreadTests";
+			productReference = 17FFD6C41A65BA6A004E0C07 /* Artisan BreadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17FFD6A41A65BA6A004E0C07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "STEVE SILESKY";
+				TargetAttributes = {
+					17FFD6AB1A65BA6A004E0C07 = {
+						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					17FFD6C31A65BA6A004E0C07 = {
+						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0940;
+						TestTargetID = 17FFD6AB1A65BA6A004E0C07;
+					};
+				};
+			};
+			buildConfigurationList = 17FFD6A71A65BA6A004E0C07 /* Build configuration list for PBXProject "Artisan Bread" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17FFD6A31A65BA6A004E0C07;
+			productRefGroup = 17FFD6AD1A65BA6A004E0C07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17FFD6AB1A65BA6A004E0C07 /* Artisan Bread */,
+				17FFD6C31A65BA6A004E0C07 /* Artisan BreadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17FFD6AA1A65BA6A004E0C07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17FFD6BA1A65BA6A004E0C07 /* Main.storyboard in Resources */,
+				17E9E3BE1A66E64B0017CE8F /* Artisan.plist in Resources */,
+				17FFD6BF1A65BA6A004E0C07 /* LaunchScreen.xib in Resources */,
+				17639A511E983B9B003B2CC9 /* Instructions.pdf in Resources */,
+				170B772D1AF3EFC500D62309 /* Settings.bundle in Resources */,
+				17FFD6BC1A65BA6A004E0C07 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17FFD6C21A65BA6A004E0C07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17FFD6A81A65BA6A004E0C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178576E71AC77C0D0073E432 /* DetailViewController.swift in Sources */,
+				179196D81A6B45F800F26E1B /* Breadext.swift in Sources */,
+				17862DD01B795F2600BF5C52 /* BreadData.swift in Sources */,
+				17862DCE1B795EA500BF5C52 /* CloudKitHelper.swift in Sources */,
+				17502EFC1AE2FF4900AC3778 /* NewIngredientViewController.swift in Sources */,
+				17F1BBAF1AF66FCE007533FE /* Artisan_Bread.xcdatamodeld in Sources */,
+				17FFD6B21A65BA6A004E0C07 /* AppDelegate.swift in Sources */,
+				177D69041AEEF561005686AB /* InstructionsDetailViewController.swift in Sources */,
+				17F1BBB51AF673B1007533FE /* Bread.swift in Sources */,
+				173051771ACB77740080A388 /* CoreDataStack.swift in Sources */,
+				17E9E3BC1A66E5760017CE8F /* NewBreadViewController.swift in Sources */,
+				17F1BBB71AF673B2007533FE /* Recipe.swift in Sources */,
+				17862DD71B79670500BF5C52 /* NetworkAvailabiity.swift in Sources */,
+				17FFD6D51A65BB02004E0C07 /* BreadViewController.swift in Sources */,
+				17862DDB1B796C8D00BF5C52 /* ReviewViewController.swift in Sources */,
+				17D2E9481AD04D290014DBAF /* Recipeext.swift in Sources */,
+				17862DD21B795F6600BF5C52 /* ImportExportExt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17FFD6C01A65BA6A004E0C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17FFD6CB1A65BA6A004E0C07 /* Artisan_BreadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17FFD6C61A65BA6A004E0C07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17FFD6AB1A65BA6A004E0C07 /* Artisan Bread */;
+			targetProxy = 17FFD6C51A65BA6A004E0C07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17FFD6B81A65BA6A004E0C07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17FFD6B91A65BA6A004E0C07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17FFD6BD1A65BA6A004E0C07 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17FFD6BE1A65BA6A004E0C07 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17FFD6CC1A65BA6A004E0C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17FFD6CD1A65BA6A004E0C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17FFD6CF1A65BA6A004E0C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Artisan Bread/Artisan Bread.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7K5FFMUUP4;
+				INFOPLIST_FILE = "Artisan Bread/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zanysocksapps.ArtisanBread;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Artisan Bread/Artisan Bread-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		17FFD6D01A65BA6A004E0C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Artisan Bread/Artisan Bread.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7K5FFMUUP4;
+				INFOPLIST_FILE = "Artisan Bread/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zanysocksapps.ArtisanBread;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Artisan Bread/Artisan Bread-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		17FFD6D21A65BA6A004E0C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Artisan BreadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zanysocksapps.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Artisan Bread.app/Artisan Bread";
+			};
+			name = Debug;
+		};
+		17FFD6D31A65BA6A004E0C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Artisan BreadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zanysocksapps.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Artisan Bread.app/Artisan Bread";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17FFD6A71A65BA6A004E0C07 /* Build configuration list for PBXProject "Artisan Bread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17FFD6CC1A65BA6A004E0C07 /* Debug */,
+				17FFD6CD1A65BA6A004E0C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17FFD6CE1A65BA6A004E0C07 /* Build configuration list for PBXNativeTarget "Artisan Bread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17FFD6CF1A65BA6A004E0C07 /* Debug */,
+				17FFD6D01A65BA6A004E0C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17FFD6D11A65BA6A004E0C07 /* Build configuration list for PBXNativeTarget "Artisan BreadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17FFD6D21A65BA6A004E0C07 /* Debug */,
+				17FFD6D31A65BA6A004E0C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		17F1BBAD1AF66FCE007533FE /* Artisan_Bread.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				17F1BBAE1AF66FCE007533FE /* Artisan_Bread.xcdatamodel */,
+			);
+			currentVersion = 17F1BBAE1AF66FCE007533FE /* Artisan_Bread.xcdatamodel */;
+			path = Artisan_Bread.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 17FFD6A41A65BA6A004E0C07 /* Project object */;
+}

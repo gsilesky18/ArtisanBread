@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Basic Bread</key>
+	<dict>
+		<key>notes</key>
+		<string></string>
+		<key>rating</key>
+		<string></string>
+		<key>date</key>
+		<string>26 May 2013 12:53:55</string>
+		<key>name</key>
+		<string>Basic Bread</string>
+		<key>ingredients</key>
+		<array>
+			<dict>
+				<key>ingred</key>
+				<string>All Purpose Flour</string>
+				<key>grams</key>
+				<string>900</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Leaven</string>
+				<key>grams</key>
+				<string>200</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Salt</string>
+				<key>grams</key>
+				<string>20</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Water</string>
+				<key>grams</key>
+				<string>750</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Whole Wheat Flour</string>
+				<key>grams</key>
+				<string>100</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Rye</key>
+	<dict>
+		<key>notes</key>
+		<string></string>
+		<key>ingredients</key>
+		<array>
+			<dict>
+				<key>ingred</key>
+				<string>Rye Flour</string>
+				<key>grams</key>
+				<string>250</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Leaven</string>
+				<key>grams</key>
+				<string>200</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Bread Flour</string>
+				<key>grams</key>
+				<string>750</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Salt</string>
+				<key>grams</key>
+				<string>20</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Water</string>
+				<key>grams</key>
+				<string>800</string>
+			</dict>
+		</array>
+		<key>rating</key>
+		<string></string>
+		<key>name</key>
+		<string>Basic Rye</string>
+		<key>date</key>
+		<string>25 May 2013 12:53:57</string>
+	</dict>
+	<key>Whole Wheat</key>
+	<dict>
+		<key>date</key>
+		<string>27 May 2013 12:53:56</string>
+		<key>ingredients</key>
+		<array>
+			<dict>
+				<key>ingred</key>
+				<string>Whole Wheat Flour</string>
+				<key>grams</key>
+				<string>600</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Leaven</string>
+				<key>grams</key>
+				<string>200</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>All Purpose Flour</string>
+				<key>grams</key>
+				<string>400</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Salt</string>
+				<key>grams</key>
+				<string>20</string>
+			</dict>
+			<dict>
+				<key>ingred</key>
+				<string>Water</string>
+				<key>grams</key>
+				<string>750</string>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Basic Whole Wheat</string>
+		<key>notes</key>
+		<string></string>
+		<key>rating</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>
